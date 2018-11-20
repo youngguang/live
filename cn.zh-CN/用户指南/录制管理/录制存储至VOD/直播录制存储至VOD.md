@@ -6,7 +6,7 @@
 
 ## 说明 { .section}
 
--   您需要先开通视频点播服务，才能将视频存储至VOD。参见 [开始使用视频点播]()。
+-   您需要先开通视频点播服务，才能将视频存储至VOD。参见 [开始使用视频点播](https://help.aliyun.com/document_detail/51512.html?spm=a2c4g.11174283.6.555.3846149bpeOhZP)。
 
 -   为了避免录制时，因网络抖动或临时断流而导致录制文件被异常截断，系统会延迟断流180s，即如果断流之后在180s内重新推流，系统会默认是同一路录制流，超过180s则认为是两路录制流。
 
@@ -14,9 +14,7 @@
 ## 创建直播转点播录制模板 { .section}
 
 1.  登录 [视频直播控制台](https://live.console.aliyun.com/?spm=5176.2020520001.1001.113.O9moDX#/live/domains)。
-
 2.  单击 **域名管理**。
-
 3.  选择所需的播放域名，并单击右侧的 **模板管理**。
 
     ![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/84936/cn_zh/1532768517163/%E5%8D%95%E5%87%BB%20%E5%9F%9F%E5%90%8D%E7%AE%A1%E7%90%86-%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.png)
@@ -54,7 +52,7 @@
 
     ![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/64251/cn_zh/1515747916552/%E7%9B%B4%E6%92%AD%E8%BD%AC%E7%82%B9%E6%92%AD-%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF%E5%9C%A8%E7%82%B9%E6%92%AD%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%88%9B%E5%BB%BA.png)
 
-    在 **模板组详情**页面，对 **模板名称**、**是否默认**、以及 **模板详情** 中的 **清晰度**、**码率**、**分辨率** 等参数进行配置，并单击 **确定**。详情参见 [转码设置]()。
+    在 **模板组详情**页面，对 **模板名称**、**是否默认**、以及 **模板详情** 中的 **清晰度**、**码率**、**分辨率** 等参数进行配置，并单击 **确定**。详情参见 [转码设置](cn.zh-CN/用户指南/转码管理/通用转码.md#)、[自定义转码](cn.zh-CN/用户指南/转码管理/自定义转码.md#)。
 
     ![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/64251/cn_zh/1515748231627/%E7%9B%B4%E6%92%AD%E8%BD%AC%E7%82%B9%E6%92%AD%E6%A8%A1%E6%9D%BF%E8%AF%A6%E6%83%85%E8%AE%BE%E7%BD%AE.png)
 
