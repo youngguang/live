@@ -2,7 +2,7 @@
 
 ## Introduction {#section_srl_krc_5db .section}
 
-Global acceleration function aims to create a high-speed channel across region between the video capture region and the play source station, so that the video can be transmitted using the shortest, and the optimal link between the the video capture region and the play region, to help your business solve the problem of video lagging or high delay.
+Global acceleration function aims to create a high-speed channel across region between the video capture region and the play source station, so that the video can be transmitted using the shortest, and the optimal link between the video capture region and the play region, to help your business solve the problem of video lagging or high delay.
 
 ## Advantages {#section_em5_krc_5db .section}
 
@@ -12,9 +12,9 @@ High speed and stability: access and distribution from the nearest edge node, gl
 
 Global coverage: mainstream regions such as Europe and America are covered.
 
-Flexible sale: the service is billed with day as the time granularity, which supports the configuration of dedicated lines at stream lvel, to meet different user needs.
+Flexible sale: the service is billed with day as the time granularity, which supports the configuration of dedicated lines at stream level, to meet different user needs.
 
-## Comparison beween public network transmission with global acceleration {#section_v3v_krc_5db .section}
+## Comparison between public network transmission with global acceleration {#section_v3v_krc_5db .section}
 
 |Functions|Public network|High-speed dedicated line|
 |:--------|:-------------|:------------------------|
