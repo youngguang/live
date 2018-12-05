@@ -17,7 +17,7 @@
 2.  单击 **域名管理**。
 3.  选择所需的播流域名，并获取域名对应的CNAME。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20690/154269392111550_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20690/154399574711550_zh-CN.png)
 
     **说明：** CNAME 栏中有感叹号（！）提示的说明还没有配置CNAME信息。配置CNAME信息，参见以下内容。
 
@@ -26,18 +26,18 @@
     2.  单击 **域名列表**。
     3.  选择需要配置解析的域名，并单击 **解析**。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20690/154269392111551_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20690/154399574711551_zh-CN.png)
 
     4.  单击 **添加记录**。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20690/154269392111552_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20690/154399574711552_zh-CN.png)
 
     5.  设置解析参数，并单击 **确定**。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20690/154269392111553_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20690/154399574711553_zh-CN.png)
 
         -   在 **记录类型** 中，选择 **CNAME** 选项。
-        -   在 **主机记录** 中输入推流地址二级域名。例如：播流域名是`a-play.aliyunlive.com`，则二级域名为`a-play`。
+        -   在 **主机记录** 中输入播流地址二级域名。例如：播流域名是`a-play.aliyunlive.com`，则二级域名为`a-play`。
         -   在 **记录值**中，输入直播控制台域名列表中 CNAME 栏内容。
 5.  播流域名进行CNAME解析之后，您需要按照同样的步骤对 **推流域名** 进行CNAME解析。
 
