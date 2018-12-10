@@ -1,0 +1,72 @@
+# AddCasterEpisodeGroup {#concept_lds_fgd_pfb .concept}
+
+添加导播台节目列表。
+
+## 请求参数 {#section_wbs_wdd_pfb .section}
+
+|参数|类型|是否必选|描述|
+|:-|:-|:---|:-|
+|Action|String|是|操作接口名，系统规定参数，取值：AddCasterEpisodeGroup|
+|ClientToken|String|是|用于保证请求的幂等性。-   由客户端生成该参数值，要保证在不同请求间唯一，
+-   最大不值过 64 个 ASCII 字符。
+
+|
+|DomainName|String|是|域名|
+|Items|\[\]Item|是|节目列表|
+|StartTime|String|是|起始时间。-   UTC 格式，
+-   例如：2016-06-29T19:00:00Z
+
+|
+|RepeatNum|Integer|是|重复次数。-   0表示不循环，
+-   -1表示无限循环。
+
+|
+|SideOutputUrl|String|是|用户自定义旁路输出地址|
+|CallbackUrl|String|是|用户回调地址|
+
+**Item**
+
+|参数|类型|是否必须|描述|
+|:-|:-|:---|:-|
+|ItemName|String|是|节目名称。|
+|VodUrl|String|是|点播文件地址。-   当且仅当资源为文件视频，且视频文件未导入素材库时使用。
+-   支持mp4/flv/ts格式。
+
+ |
+
+## 返回参数 {#section_fz3_12d_pfb .section}
+
+|参数|类型|描述|
+|:-|:-|:-|
+|RequestId|String|该条任务请求Id|
+|ProgramId|String|节目单ID|
+|ItemIds|String\[\]|节目ID列表|
+
+## 示例 {#section_l4v_c2d_pfb .section}
+
+请求示例
+
+```
+https://live.aliyuncs.com?Action=AddCasterEpisodeGroup&StartTime=2018-03-06T19:00:00Z&DomainName=XXXXX.XXX.XXX&RepeatNum=3&SideOutputUrl=http://XXXX/XXXX&CallbackUrl=http://XXXXXX/XXXXXXX&SwitchType=TimeFirst&Items.1.ItemName=节目1&Items.1.VodUrl=http://XXXX/XXXXXX1.flv&Items.2.ItemName=节目2&Items.2.VodUrl=http://XXXX/XXXXXX2.mp4&<公共请求参数>
+```
+
+返回示例
+
+```
+{
+    "RequestId": "16A96B9A-F203-4EC5-8E43-CB92E68F4CD8",
+    "ProgramId": "16A96B9A-F203-4EC5-8E43-CB92E68XX876",
+    "ItemIds": [
+      "21926b36-7dd2-4fde-ae25-51b5bc8e52d8",
+      "21926b36-7dd2-4fde-ae25-51b5bc98765t"
+    ]
+}
+```
+
+## 特殊错误码 {#section_ktw_22d_pfb .section}
+
+|错误代码|描述|Http状态码|语义|
+|:---|:-|:------|:-|
+|PermissionDenied|Permission Denied|401|无权访问轮播台|
+|InternalError|InternalError|500|内部错误|
+
