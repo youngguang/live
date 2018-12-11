@@ -6,7 +6,7 @@
 
 -   如果您的域名是在阿里云域名服务申请，请按照以下步骤操作。
 
--   如果您的域名不是在万网申请，可先将域名转入阿里云域名服务管理，执行 [域名转入流程](https://wanwang.aliyun.com/domain/transfers)，域名转入阿里云域名服务后，再按步骤执行 CNAME 绑定操作。
+-   如果您的域名不是在阿里云域名服务申请，可先将域名转入阿里云域名服务管理，执行 [域名转入流程](https://wanwang.aliyun.com/domain/transfers)，域名转入阿里云域名服务后，再按步骤执行 CNAME 绑定操作。
 
 -   如果您的域名是通过其他途径申请，您也可以在域名所在网站进行CNAME绑定。
 
@@ -19,7 +19,7 @@
 2.  单击 **域名管理**。
 3.  选择所需的播流域名，并获取域名对应的CNAME。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/65145/154453025533135_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/65145/154453278533135_zh-CN.png)
 
     **说明：** CNAME 栏中有感叹号（！）提示的说明还没有配置CNAME信息。请您按照以下步骤配置CNAME信息。
 
@@ -28,15 +28,15 @@
     2.  单击 **域名列表**。
     3.  选择需要配置解析的域名，并单击 **解析**。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/65145/154453025533136_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/65145/154453278533136_zh-CN.png)
 
     4.  单击 **添加记录**。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/65145/154453025533137_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/65145/154453278533137_zh-CN.png)
 
     5.  设置解析参数，并单击 **确定**。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/65145/154453025533138_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/65145/154453278533138_zh-CN.png)
 
         -   在 **记录类型** 中，选择 **CNAME** 选项。
         -   在 **主机记录** 中输入播流地址二级域名。例如：播流域名是`a-play.aliyunlive.com`，则二级域名为`a-play`。
