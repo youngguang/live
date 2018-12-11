@@ -25,8 +25,6 @@
 
 以上为阿里视频云端云一体化SDK和Demo，包含完整UI交互的产品级Demo，方便用户快速集成使用。用户如果需要老版本的SDK和Demo请参考[发布历史](https://help.aliyun.com/document_detail/53059.html?spm=a2c4g.11186623.6.682.YKT15z)。
 
-互动直播SDK目前属于公测阶段，业务咨询可加钉钉群：11759425
-
 ## OBS直播答题推流工具 {#section_idm_nqk_nfb .section}
 
 |端|说明文档|下载地址|
