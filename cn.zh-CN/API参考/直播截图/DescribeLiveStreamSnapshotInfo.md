@@ -1,0 +1,95 @@
+# DescribeLiveStreamSnapshotInfo {#reference2431 .reference}
+
+查询一段时间内截图内容。
+
+## 请求参数 {#section_k4f_qm1_dfb .section}
+
+|参数|类型|是否必选|示例值|描述|
+|:-|:-|:---|:--|:-|
+|Action|String|是|DescribeLiveStreamSnapshotInfo|系统规定参数。取值：DescribeLiveStreamSnapshotInfo|
+|AppName|String|是|testApp|直播流所属应用名称。|
+|DomainName|String|是|www.yourdomain.com|您的加速域名。|
+|EndTime|String|是|2017-12-22T08:00:00:00Z| 结束时间。
+
+ -   格式：2015-12-01T17:36:00Z。
+-   EndTime 和 StartTime 之间的间隔不能超过 1 天。
+
+ |
+|StartTime|String|是|2017-12-21T08:00:00:00Z| 开始时间。
+
+ 格式：2015-12-01T17:36:00Z。
+
+ |
+|StreamName|String|是|testStream|直播流名称。|
+|Limit|Integer|否|10| 一次调用获取的数量。
+
+ 取值范围：\[1，100\]
+
+ 默认值：10
+
+ |
+
+## 返回参数 {#section_p4f_qm1_dfb .section}
+
+|名称|类型|示例值|描述|
+|:-|:-|:--|:-|
+|RequestId|String|62136AE6-7793-45ED-B14A-60D19A9486D3|该条任务请求 ID。|
+|LiveStreamSnapshotInfoList| | |截图内容列表，没有则返回空数组。|
+|  └CreateTime|String|2015-12-01T17:36:00Z| 截图产生时间。
+
+ 格式：2015-12-01T17:36:00Z。
+
+ |
+|  └OssEndpoint|String|oss-cn-shanghai.aliyuncs.com|OSSEndpoint域名。|
+|  └OssBucket|String|test123|OSSBucket的名称。|
+|  └OssObject|String|test123|OSSObject名称。|
+|NextStartTime|String|2015-12-01T17:36:00Z| 下一个起始时间。
+
+ 当此时间范围内的内容超出了 limit 的数量限制，则返回此参数，表示下一个文件的创建时间，可以将此时间当做 StartTime，重新调用此接口获取下一段内容，不传则表示未超出 limit 数量。
+
+ |
+
+## 示例 {#section_zcx_4j1_dfb .section}
+
+请求示例
+
+```
+ https://live.aliyuncs.com/?Action=DescribeLiveStreamSnapshotInfo&DomainName=xxxxx&AppName=aliyuntest&StreamName=xxx&StartTime=xxx&EndTime=xxx&<公共请求参数>
+```
+
+正常返回示例
+
+JSON格式
+
+```
+{
+    "LiveStreamSnapshotInfoList":{
+        "LiveStreamSnapshotInfo":[{
+            "CreateTime":"2016-05-25T09:41:09Z",
+            "OssBucket":"livevideo-test",
+            "OssEndpoint":"oss-test.aliyun-inc.com",
+            "OssObject":"{AppName}/{StreamName}.jpg"
+        }]
+    },
+    "NextStartTime":"2015-12-01T17:36:00Z",
+    "RequestId":"62136AE6-7793-45ED-B14A-60D19A9486D3"
+}
+```
+
+异常返回示例
+
+JSON格式
+
+```
+{
+    "Code":"InternalError",
+    "HostId":"live.aliyuncs.com",
+    "Message":"The request processing has failed due to some unknown error.",
+    "RequestId":"6EBD1AC4-C34D-4AE1-963E-B688A228BE31"
+}
+```
+
+## 错误码 {#section_gvr_h3h_dfb .section}
+
+ [查看本产品错误码](https://error-center.aliyun.com/status/product/live) 
+
