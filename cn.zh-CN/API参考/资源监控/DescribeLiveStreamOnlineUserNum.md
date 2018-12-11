@@ -1,0 +1,80 @@
+# DescribeLiveStreamOnlineUserNum {#reference2093 .reference}
+
+查询直播流实时在线人数。
+
+**说明：** 整体数据延时 2-5分钟。
+
+## 请求参数 {#section_k4f_qm1_dfb .section}
+
+|参数|类型|是否必选|示例值|描述|
+|:-|:-|:---|:--|:-|
+|Action|String|是|DescribeLiveStreamOnlineUserNum|系统规定参数。取值：DescribeLiveStreamOnlineUserNum|
+|DomainName|String|是|example.com|您的加速域名。|
+|AppName|String|否|testApp|直播流所属应用名称。|
+|StreamName|String|否|testStream|直播流名称。|
+
+## 返回参数 {#section_p4f_qm1_dfb .section}
+
+|名称|类型|示例值|描述|
+|:-|:-|:--|:-|
+|TotalUserNumber|Long|2|所有流的用户数总和。|
+|OnlineUserInfo|无|无|每条直播流的用户数信息。|
+|  └StreamUrl|String|rtmp://example.com/AppName/StreamName|直播流的 URL。|
+|  └UserNumber|Long|2|直播流的在线人数。|
+|  └Time|String|2015-12-01T17:37:00Z| 统计时刻。
+
+ UTC 时间，格式：2015-12-01T17:37:00Z。
+
+ |
+|RequestId|String|40A4F36D-A7CC-473A-88E7-154F92242566|该条任务请求ID。|
+
+## 示例 {#section_zcx_4j1_dfb .section}
+
+请求示例
+
+```
+ https://live.aliyuncs.com/?Action=DescribeLiveStreamOnlineUserNum&DomainName=example.com&<公共请求参数>
+```
+
+**说明：** 关于公共请求参数详细内容，参见 [公共请求参数](https://help.aliyun.com/document_detail/50284.html)。
+
+正常返回示例
+
+JSON格式
+
+```
+{
+    "OnlineUserInfo":{
+        "LiveStreamOnlineUserNumInfo":[
+            {
+                "StreamUrl":"rtmp://example.com/live/example",
+                "UserNumber":2
+            },
+            {
+                "StreamUrl":"rtmp://example.com/live/example1",
+                "UserNumber":5
+            }
+        ]
+    },
+    "RequestId":"16A96B9A-F203-4EC5-8E43-CB92E68F4CD8",
+    "TotalUserNumber":7
+}
+```
+
+异常返回示例
+
+JSON格式
+
+```
+{
+    "Code":"InternalError",
+    "HostId":"live.aliyuncs.com",
+    "Message":"The request processing has failed due to some unknown error.",
+    "RequestId":"6EBD1AC4-C34D-4AE1-963E-B688A228BE31"
+}
+```
+
+## 错误码 { .section}
+
+ [查看本产品错误码](https://error-center.aliyun.com/status/product/live) 
+
