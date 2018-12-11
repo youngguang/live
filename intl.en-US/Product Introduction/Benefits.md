@@ -6,7 +6,7 @@
 
 ## Global coverage {#section_fnn_jrb_5db .section}
 
--   ApsaraVideo Live has 1,300-plus live video nodes for full global coverage.
+-   ApsaraVideo Live has 1,500-plus live video nodes for full global coverage.
 -   Gradually expanding construction of live center, covering Europe, Southeast Asia and other countries and regions, to serve the global users.
 
 ## End-to-end seamless support { .section}
