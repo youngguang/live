@@ -204,7 +204,7 @@ Android推流SDK
 
 ## 播放器SDK {#section_brt_pz1_pfb .section}
 
-[播放器SDK发布历史](https://help.aliyun.com/document_detail/53059.html?spm=5176.doc61899.6.664.XvgKxC)
+[播放器SDK发布历史](https://help.aliyun.com/document_detail/94328.html?spm=a2c4g.11174283.6.816.6896149baVG8PS)
 
 **说明：** 直播播放器已和点播放器合并，老用户升级可以直接使用基础播放器。
 
