@@ -32,8 +32,8 @@
 
 |端|说明文档|下载地址|
 |:-|:---|:---|
-|Mac|[OBS推流-直播答题使用说明](https://help.aliyun.com/document_detail/66134.html)|[MAC 推流工具 V0.0.1](https://vod-download.cn-shanghai.aliyuncs.com/sdk-out-demo/AlivcLivePusher/OBS_Mac_20180131.zip)|
-|Windows|[OBS推流-直播答题使用说明](https://help.aliyun.com/document_detail/66134.html)|[Windows 推流工具 V0.0.1](https://vod-download.cn-shanghai.aliyuncs.com/sdk-out-demo/AlivcLivePusher/OBS-Windows-Installer_20180131.zip)|
+|Mac|OBS推流-直播答题使用说明|[MAC 推流工具 V0.0.1](https://vod-download.cn-shanghai.aliyuncs.com/sdk-out-demo/AlivcLivePusher/OBS_Mac_20180131.zip)|
+|Windows|OBS推流-直播答题使用说明|[Windows 推流工具 V0.0.1](https://vod-download.cn-shanghai.aliyuncs.com/sdk-out-demo/AlivcLivePusher/OBS-Windows-Installer_20180131.zip)|
 
 ## 直播服务端 SDK {#section_dnd_qqk_nfb .section}
 
