@@ -39,23 +39,10 @@
 
 |端|说明文档|下载地址|
 |:-|:---|:---|
-|Java SDK|[Java SDK 使用说明](https://help.aliyun.com/document_detail/53270.html)|[Java SDK 安装与下载](https://develop.aliyun.com/sdk/java?spm=5176.7926468.210367.1.rX8Il4)|
-|Python SDK|[Python SDK 使用说明](https://help.aliyun.com/document_detail/53272.html)|[Python SDK 安装与下载](https://develop.aliyun.com/sdk/python?spm=5176.7926450.210367.2.BygG6L)|
-|PHP SDK|[PHP SDK 使用手册](https://develop.aliyun.com/sdk/php?spm=5176.52618.210367.3.NHyaTv)|[PHP SDK 安装与说明](https://develop.aliyun.com/sdk/php?spm=5176.52618.210367.3.NHyaTv)|
-|.Net SDK|[.Net SDK 使用手册](https://develop.aliyun.com/sdk/csharp?spm=5176.doc27234.2.4.TPiG4j)|[.Net SDK 安装与说明](https://develop.aliyun.com/sdk/csharp?spm=5176.7926452.210367.4.7Mkow0)|
+|Java SDK|[Java SDK 使用说明](../../../../intl.zh-CN/服务端SDK/Java SDK使用说明.md#)|[Java SDK 安装与下载](https://www.alibabacloud.com/zh/support/developer-resources?spm=a2796.7919406.1097650.dzhnavresourcesb1.3f1a2d23aK21Gh)|
+|Python SDK|[Python SDK 使用说明](../../../../intl.zh-CN/服务端SDK/Python SDK使用说明.md#)|[Python SDK 安装与下载](https://www.alibabacloud.com/zh/support/developer-resources?spm=a2796.7919406.1097650.dzhnavresourcesb1.3f1a2d23aK21Gh)|
+|PHP SDK|PHP SDK 使用手册|[PHP SDK 安装与说明](https://www.alibabacloud.com/zh/support/developer-resources?spm=a2796.7919406.1097650.dzhnavresourcesb1.3f1a2d23aK21Gh)|
+|.Net SDK|.Net SDK 使用手册|[.Net SDK 安装与说明](https://www.alibabacloud.com/zh/support/developer-resources?spm=a2796.7919406.1097650.dzhnavresourcesb1.3f1a2d23aK21Gh)|
 
 ## 文档索引 {#section_qrq_rqk_nfb .section}
-
-|场景|文档索引|
-|:-|:---|
-|接入|[价格概述](../../../../intl.zh-CN/产品定价/计费概述.md#)、[购买指导](../../../../intl.zh-CN/产品定价/购买流程.md#)、[快速开始](../../../../intl.zh-CN/用户指南/快速开始.md#)、[API概述](../../../../intl.zh-CN/API参考/直播API概述.md#)、[管理域名](../../../../intl.zh-CN/用户指南/域名管理/管理域名/添加域名.md#)、[CNAME 域名解析](../../../../intl.zh-CN/用户指南/域名管理/解析CNAME.md#)、[直播录制存入OSS](../../../../intl.zh-CN/用户指南/录制管理/录制存储至OSS/直播录制存储至OSS.md#)、[直播截图](../../../../intl.zh-CN/用户指南/截图管理/配置截图.md#)|
-|推流| -   [推流控制台操作](../../../../intl.zh-CN/用户指南/推播流配置/配置边缘推流.md#)、[推流码率监控](../../../../intl.zh-CN/用户指南/直播流管理/查看直播流帧率码率.md#)
--   iOS 推流 SDK：[快速接入](https://help.aliyun.com/document_detail/45263.html)、[接口说明](https://help.aliyun.com/document_detail/50078.html)
--   Android 推流 SDK：[快速接入](https://help.aliyun.com/document_detail/45265.html)、[接口说明](https://help.aliyun.com/document_detail/50075.html)
-
- |
-|播放| -   iOS 播放器 SDK：[使用说明](https://help.aliyun.com/document_detail/61431.html)、[接口说明](https://help.aliyun.com/document_detail/61899.html)
--   Android 播放器 SDK：[使用说明](https://help.aliyun.com/document_detail/61908.html)、[接口说明](https://help.aliyun.com/document_detail/61917.html) 
-
- |
 
