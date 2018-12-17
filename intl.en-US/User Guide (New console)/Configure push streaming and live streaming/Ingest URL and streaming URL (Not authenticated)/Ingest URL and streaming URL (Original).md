@@ -15,7 +15,7 @@ Perform the following operations to get thevingest URL and streaming URL:
 
 -   Create a domain name
 
-    You must first created an ingest domain name and a streaming domain name that have completed ICP filing. For more information, see [Create a domain name](reseller.en-US/User Guide (New console)/Domain names management/Manage a domain name/Create a domain name.md#).
+    You must first created an ingest domain name and a streaming domain name that have completed ICP filing. For more information, see Create a domain name.
 
 -   Configure CNAME
 
