@@ -13,18 +13,18 @@ IP 黑名单当前支持 IP 网段添加，例如：127.0.0.1/24。
 1.  登录 [视频直播控制台](https://home.console.aliyun.com/new#/)。
 2.  单击 **域名管理**，选择所需的域名，并单击 **域名配置**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20696/154269531921674_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20696/154512612121674_zh-CN.png)
 
 3.  单击 **访问控制** \> **IP 黑名单**，并单击 **修改配置**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20696/154269531921675_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20696/154512612221675_zh-CN.png)
 
 4.  在 **IP 黑名单** 中，输入黑名单 IP。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20696/154269531921676_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20696/154512612221676_zh-CN.png)
 
      **IP 黑名单** 配置成功。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20696/154269531921677_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20696/154512612221677_zh-CN.png)
 
 
