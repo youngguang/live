@@ -46,7 +46,7 @@ Perform the following steps to get ingest URL and streaming URL:
 4.  Configure the optional function.
     -   You can choose to configure the anti-theft chain feature to limit the availability of live video distribution resources. For more information, see [Configure anti-leech](reseller.en-US/User Guide (New console)/Domain names management/Access control/Configure anti-leech.md#).
     -   You can configure IP blacklist to prevent an IP from accessing your CDN domain name. For more information, see [Configure IP blacklist](reseller.en-US/User Guide (New console)/Domain names management/Access control/Configure IP blacklist.md#).
-    -   You can configure HTTPS secure acceleration to prevent the hidden danger of sensitive information from leakage. For more information, see [Configure HTTPS secure acceleration](https://help.aliyun.com/document_detail/84930.html).
+    -   You can configure HTTPS secure acceleration to prevent the hidden danger of sensitive information from leakage. For more information, see [Configure HTTPS secure acceleration](reseller.en-US/User Guide (New console)/Domain names management/Configure HTTPS secure acceleration.md#).
     -   You can also configure notification URL so as to receive prompt feedback when the push streaming succeeds or the stream is disconnected successfully. For more information, see [Notification URL](reseller.en-US/User Guide (New console)/Streams Management/Ingest Callback URL.md#).
 5.  Get ingest UTL and streaming URL.
 
