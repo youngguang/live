@@ -58,6 +58,6 @@ The streaming URLs are divided into original streaming URL and transcoding strea
 
 -   Examples
 
-    Example: the ingest domain name is `push.aliyunlive.com`, the AppName is app, the StreamName is stream, and teh authentication key is 123, then the ingest URL is `RTMP://push.aliyunlive.com/app/stream`
+    Example: the ingest domain name is `push.aliyunlive.com`, the AppName is app, the StreamName is stream, and the authentication key is 123, then the ingest URL is `RTMP://push.aliyunlive.com/app/stream`
 
 
