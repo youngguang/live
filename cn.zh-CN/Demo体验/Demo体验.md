@@ -2,9 +2,9 @@
 
 阿里视频云端云一体化体验Demo是视频云端到云到端全链路的最佳实践，主要包含短视频、互动直播、RTMP推流、播放器和上传的全链路演示，提供完整的、产品级的交互UI源码帮助开发者快速实现业务需求，节约开发时间和成本。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20904/154440859933874_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20904/154519056833874_zh-CN.png)
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20904/154440859933875_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20904/154519056833875_zh-CN.png)
 
 **说明：** 
 
