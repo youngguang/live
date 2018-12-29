@@ -2,6 +2,8 @@
 
 You can use Alibaba Cloud’s streaming and stream play demo for live streaming and play. Perform the following steps to complete streaming and stream play at mobile end.
 
+**Note:** **Terms in the console have been updated, and we will update the documentation as soon as possible. We are sorry for any inconvenience caused**.
+
 ## Download streaming and a stream play demo {#section_ejq_tjc_bfb .section}
 
 You can use DingTalk app to scan the following QR code, install the mobile-end Demo integrated in Alibaba Cloud.
@@ -11,7 +13,7 @@ You can use DingTalk app to scan the following QR code, install the mobile-end D
 -   You must install streaming demo and stream play at two mobiles respectively, so that one is used for streaming, and meanwhile, the other is used for stream play.
 -   Due to restrictions to Wechat and QQ, you can use [DingTalk](https://itunes.apple.com/cn/app/%E9%92%89%E9%92%89/id930368978?spm=a2c4g.11186623.2.4.3c50650ctVEl77&mt=8) app or a third-party software to scan the QR code for installation.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20640/154504689113723_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20640/154598820213723_en-US.png)
 
 ## Get streaming URL and stream play URL {#section_j1t_zjc_bfb .section}
 
@@ -21,7 +23,7 @@ You can use DingTalk app to scan the following QR code, install the mobile-end D
 
     In **Pusher setting**, click **NEW** at the right side of the streaming URL. The system automatically creates a streaming URL, and meanwhile, generates a corresponding QR code of a stream play URL \(The stream play URL is automatically copied to the clipboard, you can copy the The stream play URL to the player or scan the QR code for watching\). See the following figure:
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20640/154504689113724_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20640/154598820213724_en-US.png)
 
 
 ## Configure streaming {#section_usr_2kc_bfb .section}

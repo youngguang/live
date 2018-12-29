@@ -2,6 +2,8 @@
 
 URL authentication function aims to protect the user’s website content from the illegal or malicious behavior. Using anti-leech to add a referer whitelist and blacklist can solve some hotlinking problems. However, the referer anti-leech cannot protect the site resource because the referer content can be falsified. Therefore, using URL authentication to protect the user’s source site resource is safer and more effective.
 
+**Note:** **Terms in the console have been updated, and we will update the documentation as soon as possible. We are sorry for any inconvenience caused**.
+
 It is a safe and reliable anti-theft mechanism that protects site resources by coordinating Alibaba Cloud CDN acceleration node with customer’s resources site. The customer site provides customer with an encrypted URL \(including authentication information\), which the user then uses to make a request to the acceleration node. The acceleration node verifies the authentication information in the encrypted URL to determine the validity of the request \(that is, whether to respond normally to a valid response or refuse an invalid response\), thus effectively protecting customer site resources.
 
 ## Authentication URL composition { .section}
@@ -74,13 +76,13 @@ In default authorization, the authorization key is assigned randomly, and the Va
 
 3.  Select the **Streaming Domain Name**, and the associated **Ingest Domain Name** to be authenticated, enter the corresponding **AppName** and **StreamName**, and click **Generate URLs**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20694/154511466821651_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20694/154598833321651_en-US.png)
 
     **Note:** You can configure the authentication for the Ingest Domain Name and the Streaming Domain Name as needed. We recommend that you perform authentication on both domain names so as to reduce the risk of bootlegging.
 
     You can get the authenticated ingest URL and streaming URL.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20694/154511466821652_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20694/154598833321652_en-US.png)
 
 
 Custom authentication
@@ -90,25 +92,25 @@ If you don’t adopt default configuration, you can also customize **Primary KEY
 1.  Log on to the ApsaraVideo Live console.
 2.  Click **Domain Names**, select the domain name that you want to perform customize authentication, and click **Configure**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20694/154511466821657_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20694/154598833321657_en-US.png)
 
 3.  Click **Access Control**, select **URL Authentication**, and click **Change settings**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20694/154511466821658_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20694/154598833321658_en-US.png)
 
     You can also go to **Live Management** \> **URL Generator** \> **Edge Ingestion**, click **Go to Access Control to change it** following **Streaming Domain Name** and the associated **Ingest Domain Name** to quickly go to the custom authentication page.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20694/154511466821659_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20694/154598833321659_en-US.png)
 
 4.  In **URL Authentication** page, customize the**Primary KEY**, **Standby KEY**, and **Validity Period**, and click **OK**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20694/154511466821660_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20694/154598833321660_en-US.png)
 
     **Note:** **Primary KEY** is a key for calculating encrypted string. If the **Primary KEY** is changed, all URLs using the **Primary KEY** instantly becomes invalid. The **Standby KEY**bridges the process of modifying the **Primary KEY**, that is, when you change the Primary KEY, the ingest URL or streaming URL using the **Primary KEY** does not become invalid instantly, and the **Standby KEY** plays a transition role.
 
 5.  In **Live Management** \> **URL Generator** \> **Edge Ingestion**, select the **Streaming Domain Name**, the associated **Ingest Domain Name** to be authenticated, and enter the corresponding **AppName** and **StreamName**, and click **Generate URLs**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20694/154511466821661_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20694/154598833321661_en-US.png)
 
     You can get the authenticated ingest URL and streaming URL.
 

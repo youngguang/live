@@ -2,6 +2,8 @@
 
 The anti-leech function is realized based on the HTTP referrer mechanism where the referer is used for source tracking and source identification. Users can configure a referer blacklist or whitelist to identify and filter visitors in order to limit access to live video distribution resources.
 
+**Note:** **Terms in the console have been updated, and we will update the documentation as soon as possible. We are sorry for any inconvenience caused**.
+
 Currently, the anti-leech function supports the blacklist or whitelist mechanism. After a visitor initiates a request for a resource, and the request arrives at a CDN node. The CDN node filters the identity of the visitor based on the preset anti-leech blacklist or whitelist. If the identity complies with the rules, the visitor can access the requested resource; and if the identity fails to comply with the rules, the request will be forbidden and a 403 response code is returned.
 
 ## Attentions { .section}
@@ -27,20 +29,20 @@ Currently, the anti-leech function supports the blacklist or whitelist mechanism
 2.  Click **Domain Names**.
 3.  Select the Streaming Domain Name to be configured, and click **Configure**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20695/154512610121664_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20695/154598830921664_en-US.png)
 
 4.  Click **Access Control**.
 5.  Select **Referrer Spam Settings**, and click **Change Settings**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20695/154512610121668_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20695/154598830921668_en-US.png)
 
 6.  Select the **Blacklist**, and add a specified domain name in **Rule**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20695/154512610121669_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20695/154598830921669_en-US.png)
 
      **Blacklist** is added successfully.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20695/154512610121670_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20695/154598830921670_en-US.png)
 
     **Note:** You can configure only one format of the anti-leech function, that is, only one of the blacklist and the whitelist can be configured at the same time.
 

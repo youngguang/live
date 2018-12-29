@@ -1,0 +1,94 @@
+# StartCaster {#reference2388 .reference}
+
+启动导播台，若PVW、PGM场景不存在则创建，启动PVW、PGM场景，启动底层音视频处理任务。
+
+## 请求参数 {#section_k4f_qm1_dfb .section}
+
+|参数|类型|是否必选|描述|
+|:-|:-|:---|:-|
+|Action|String|是|操作接口名，系统规定参数，取值：StartCaster|
+|CasterId|String|是|导播台Id|
+
+## 返回参数 {#section_p4f_qm1_dfb .section}
+
+|名称|类型|描述|
+|:-|:-|:-|
+|RequestId|String|该条任务请求Id|
+|PvwSceneInfos|\[\]SceneInfo|PVW场景信息列表|
+|PgmSceneInfos|\[\]SceneInfo|PGM场景信息列表|
+
+SceneInfo
+
+|名称|类型|描述|
+|:-|:-|:-|
+|SceneId|String|场景ID|
+|StreamUrl|String|导播台场景对应播放流地址，非旁路输出流地址|
+|StreamInfos|StreamInfo\[\]|旁路输出播放地址列表|
+
+StreamInfo
+
+|名称|类型|描述|
+|:-|:-|:-|
+|TranscodeConfig|String|转码配置。-   lsd：标清
+-   lld：流畅
+-   lud：超清
+-   lhd：高清
+
+|
+|VideoFormat|String|格式 flv,rtmp,m3u8|
+|OutputStreamUrl|String|播放地址|
+
+## 示例 {#section_zcx_4j1_dfb .section}
+
+请求示例
+
+```
+ https://live.aliyuncs.com?Action=StartCaster&CasterId=80787064-1c94-4dc1-85ce-9409960a9bf0&<公共请求参数>
+```
+
+返回示例
+
+```
+{
+    "RequestId": "16A96B9A-F203-4EC5-8E43-CB92E68F4CD8",
+    "PvwSceneInfos": [
+        {
+           "SceneId":"b5f8c837-ceeb-424f-b30b-68e94e864995",
+           "StreamUrl":"rtmp://XXXXXX/caster/1975ee99db904ebb83908d43bc878188?auth_key=1506396160-0-0-063397072a9980fd418d43eb00e02e09"
+        }
+    ],
+    "PgmSceneInfos": [
+      {
+         "SceneId":"b5f8c837-ceeb-424f-b30b-68e94e864996",
+         "StreamUrl":"rtmp://XXXXXX/caster/1975ee99db904ebb83908d43bc878188?auth_key=1506396160-0-0-063397072a9980fd418d43eb00e02e10",
+         "StreamInfos": [
+                {
+                    "VideoFormat": "flv",
+                    "OutputStreamUrl": "http://XXXXXX/caster/fb628e2469f94f2aa2c0c219af8b2527_lld.flv?auth_key=1506396160-0-0-7de771a77102680861853af862d5eaf0",
+                    "TranscodeConfig": "lld"
+                },
+                {
+                    "VideoFormat": "rtmp",
+                    "OutputStreamUrl": "rtmp://XXXXXX/caster/fb628e2469f94f2aa2c0c219af8b2527_lld?auth_key=1506396160-0-0-77ed32cd82ed32ccd51a832b5765814c",
+                    "TranscodeConfig": "lld"
+                },
+                {
+                    "VideoFormat": "m3u8",
+                    "OutputStreamUrl": "http://XXXXXX/caster/fb628e2469f94f2aa2c0c219af8b2527.m3u8?auth_key=1506396160-0-0-d51f0512dcf76aa749f79f53ae6421d2",
+                    "TranscodeConfig": "lld"
+                }
+            ]
+      }
+    ]
+}
+```
+
+## 特殊错误码 {#section_w32_ln3_dfb .section}
+
+|错误代码|描述|Http 状态码|语义|
+|:---|:-|:-------|:-|
+|PermissionDenied|Permission Denied|401|无权访问导播台|
+|InvalidCaster.NotFound|Caster is not found.|404|指定导播台不存在|
+|InvalidConfiguration.NotFound|DomainName is not configured|404|配置信息缺失|
+|InternalError|InternalError|500|内部错误|
+

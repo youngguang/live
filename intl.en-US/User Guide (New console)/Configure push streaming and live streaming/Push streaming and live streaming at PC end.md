@@ -2,6 +2,8 @@
 
 You can use push streaming tools for PC end to push video streams to Alibaba Cloud live center for content processing and distribution. You can set videos that are pushed to Alibaba Cloud live center based on your needs so that the videos can be used in different scenarios. Perform the following steps to complete streaming and play at PC end.
 
+**Note:** **Terms in the console have been updated, and we will update the documentation as soon as possible. We are sorry for any inconvenience caused**.
+
 ## Prepare tools and environment {#section_hd5_vpc_bfb .section}
 
 Push streaming and live streaming tools

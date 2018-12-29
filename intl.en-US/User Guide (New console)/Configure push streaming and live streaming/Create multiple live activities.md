@@ -1,6 +1,8 @@
 # Create multiple live activities {#concept_tls_2gk_5fb .concept}
 
-A live video activity requires an injest URL. Alibaba Cloud ApsaraVideo Live supports creating activity of a triggered type. You can create multiple live activities on the basis of the activity creation rules without using APIs.
+A live video activity requires an ingest URL. Alibaba Cloud ApsaraVideo Live supports creating activity of a triggered type. You can create multiple live activities on the basis of the activity creation rules without using APIs.
+
+**Note:** **Terms in the console have been updated, and we will update the documentation as soon as possible. We are sorry for any inconvenience caused**.
 
 ## Descriptions {#section_xyf_qnk_5fb .section}
 
@@ -10,7 +12,7 @@ Ingest URL can be created in batches according to the rules, and live activities
 
 A live video service URL consists of three levels of live video management units, namely the domain name \(Domain\), application \(APPName\) and live stream \(StreamName\). You can create multiple applications \(APPName\) under each domain name \(Domain\), and multiple live streams \(StreamName\) under each application.
 
-**Note:** For more information about the splicing rules of the ingest URL, see [Ingest URL and streaming URL](../../../../reseller.en-US/User Guide (New console)/Configure push streaming and live streaming/Ingest URL and streaming URL/Ingest URL and streaming URL (Original).md#).
+**Note:** For more information about the splicing rules of the ingest URL, see [Ingest URL and streaming URL](../reseller.en-US/User Guide (New console)/Configure push streaming and live streaming/Ingest URL and streaming URL/Ingest URL and streaming URL (Original).md#).
 
 AppName and StreamName can be customized. Different values generate different ingest URL and streaming URLs.
 
@@ -45,7 +47,7 @@ AppName and StreamName can be customized. Different values generate different in
 
 The rules of streaming URLs and the rules of ingest URLs are the same, and the application name \(AppName\) and stream name \(StreamName\) of the streaming URLs correspond to the application name \(AppName\) and stream name \(StreamName\) of the ingest URLs.
 
-**Note:** For more information about the splicing rules of a single streaming URL, see [Ingest URL and streaming URL](../../../../reseller.en-US/User Guide (New console)/Configure push streaming and live streaming/Ingest URL and streaming URL/Ingest URL and streaming URL (Original).md#).
+**Note:** For more information about the splicing rules of a single streaming URL, see [Ingest URL and streaming URL](../reseller.en-US/User Guide (New console)/Configure push streaming and live streaming/Ingest URL and streaming URL/Ingest URL and streaming URL (Original).md#).
 
 Examples
 
@@ -87,7 +89,7 @@ HLS format: hls://Streaming Domain Name/\{AppName\}/\{StreamName\} \_sd.m3u8? au
 
 You can also customize transcoding as needed. You must configure the template name of custom transcoding **Template ID** in the console.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/63384/154504679434437_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/63384/154598815434437_en-US.png)
 
 The splicing rules of multiple streaming URLs are as follows:
 
@@ -95,5 +97,5 @@ RTMP format: rtmp://Streaming Domain Name/\{AppName\}/\{StreamName\} \_templateI
 
 FLV format: http://Streaming Domain Name/\{AppName\}/\{StreamName\} \_templateID.flv? authentication string
 
-HLS format: hls://Streaming Domain Name/\{AppName\}/\{StreamName\} \_template ID.m3u8? authentication string
+HLS format: http://Streaming Domain Name/\{AppName\}/\{StreamName\} \_template ID.m3u8? authentication string
 

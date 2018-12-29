@@ -2,14 +2,16 @@
 
 Before creating an ApsaraVideo Live activity, you must add a domain name in the ApsaraVideo Live console.
 
+**Note:** **Terms in the console have been updated, and we will update the documentation as soon as possible. We are sorry for any inconvenience caused**.
+
 ## Prerequisites { .section}
 
 -   If you want to use ApsaraVideo Live service in China, you must have a domain name that has completed ICP record filing.
--   If the record-filing is pending, you must first apply for [ICP record filing](https://www.alibabacloud.com/zh/icp?spm=a2796.7919406.1097650.dznavsolutions13.430b6ecf2op4hR).
+-   If the record-filing is pending, you must first apply for ICP record filing.
 
 ## Procedure { .section}
 
-1.  Log on to the [ApsaraVideo Live console](https://live.console.aliyun.com/#/live/domains).
+1.  Log on to the [ApsaraVideo Live console](https://partners-intl.aliyun.com/login-required#/live).
 2.  Click **Domain Names** \> **Create Domain**.
 
     **Note:** You must create an **Ingest Domain Name** and a **Streaming Domain Name**.
@@ -29,6 +31,6 @@ Before creating an ApsaraVideo Live activity, you must add a domain name in the 
 
     **Ingest Domain Name** is created successfully.
 
-    **Note:** After the domain names are created, you must configure CNAME for the domain names. For more information, see [Configure CNAME](intl.en-US/User Guide (New console)/Domain names management/Configure CNAME.md#). After the domain names are successfully configured, the domain names automatically configures acceleration function, and you can use the acceleration function immediately.
+    **Note:** After the domain names are created, you must configure CNAME for the domain names. For more information, see [Configure CNAME](reseller.en-US/User Guide (New console)/Domain names management/Configure CNAME.md#). After the domain names are successfully configured, the domain names automatically configures acceleration function, and you can use the acceleration function immediately.
 
 

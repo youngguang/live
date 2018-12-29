@@ -1,6 +1,8 @@
 # Configure HTTPS secure acceleration {#concept_e3y_jck_bfb .concept}
 
-Hypertext Transfer Protocol over Secure Socket Layer \(HTTPS\) is a secuity suite of the normal HTTP channel focusing on security. It encapsulates HTTP with the SSL/TLS protocol with SSL/TLS protocol as its security base.
+Hypertext Transfer Protocol over Secure Socket Layer \(HTTPS\) is a security suite of the normal HTTP channel focusing on security. It encapsulates HTTP with the SSL/TLS protocol with SSL/TLS protocol as its security base.
+
+**Note:** **Terms in the console have been updated, and we will update the documentation as soon as possible. We are sorry for any inconvenience caused**.
 
 ## Advantages of HTTPS acceleration {#section_ffb_gvf_cfb .section}
 
@@ -43,7 +45,7 @@ Step 1. Buy a certificate
 
 To enable **HTTPS Secure Acceleration**, you must have a certificate that matches the CDN domain name. Click **Buy Now** at the ApsaraVideo Live Certificates Service to buy a certificate.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20692/154512607111633_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20692/154598849011633_en-US.png)
 
 Step 2. Configure the ApsaraVideo Live domain name
 
@@ -51,15 +53,15 @@ Step 2. Configure the ApsaraVideo Live domain name
     1.  Log on to the [ApsaraVideo Live console](https://partners-intl.aliyun.com/login-required#/live).
     2.  Click **Domain Names**, select the Streaming Domain Name that you want to configure HTTPS secure acceleration, and click **Configure**.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20692/154512607111635_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20692/154598849011635_en-US.png)
 
-    3.  Click **HTTPS配置**，并单击 **HTTPS证书**下方的 **修改配置**。
+    3.  Click **HTTPS Settings**, and click **Modify Configuration** following **HTTPS Certificate**.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20692/154512607111636_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20692/154598849011636_en-US.png)
 
     4.  In **HTTPS Configuration**, enable **HTTPS Secure Acceleration** to go to the **Certificate Status**.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20692/154512607111637_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20692/154598849011637_en-US.png)
 
 2.  Select a certificate.
 
@@ -67,7 +69,7 @@ Step 2. Configure the ApsaraVideo Live domain name
 
     -       -       -   Alibaba Cloud certificate: Certificates purchased from the ApsaraVideo Live Certificates Service are supported. You can select a certificate name to adapt to the CDN domain name.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20692/154512607111638_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20692/154598849011638_en-US.png)
 
 **Note:** Only certificates in PEM format are supported.
 
@@ -75,7 +77,7 @@ Step 2. Configure the ApsaraVideo Live domain name
 
     Click **Change Settings** following **Redirect Type**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20692/154512607111639_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20692/154598849011639_en-US.png)
 
     Forcible Redirect is supported: The system forces redirect of the users’ original request methods by default.
 
@@ -87,12 +89,12 @@ Step 2. Configure the ApsaraVideo Live domain name
 
     -   **HTTPS \> HTTP** redirect: Users’ HTTPS requests are forcibly redirected to the HTTP requests.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20692/154512607111640_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20692/154598849111640_en-US.png)
 
 
 Step 3. Verify whether the certificate has taken effect
 
 You can access resources by HTTPS when the configurations are completed and the certificate is enabled now. If a green HTTPS mark appears in your browser, it indicates that currently a private connection is established with the website and HTTPS secure acceleration is effective.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20692/154512607211641_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20692/154598849111641_en-US.png)
 

@@ -1,5 +1,7 @@
 # Custom transcoding {#concept_qcp_f3n_cfb .concept}
 
+**Note:** **Terms in the console have been updated, and we will update the documentation as soon as possible. We are sorry for any inconvenience caused**.
+
 ## Configure custom transcoding {#section_c45_lnn_cfb .section}
 
 You can customize the transcoding resolution, frame rate, bit rate, and other parameters based on your actual video output requirements.
@@ -8,11 +10,11 @@ You can customize the transcoding resolution, frame rate, bit rate, and other pa
 2.  Click **Domain Names**.
 3.  Select the Streaming Domain Name, and click **Manage Templates**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21253/154510422211724_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21253/154598870611724_en-US.png)
 
 4.  In **Transcoding**, select **Custom Transcoding**, and click **Add**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21253/154510422211725_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21253/154598870611725_en-US.png)
 
 5.  In **Transcoding Template**, add custom transcoding parameters.
     -   **AppName**: The application name of the transcoding templates.
@@ -62,5 +64,5 @@ You can customize the transcoding resolution, frame rate, bit rate, and other pa
 
 You can view which transcoding template are used in the current streams in **Streams**.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21253/154510422211727_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21253/154598870611727_en-US.png)
 
