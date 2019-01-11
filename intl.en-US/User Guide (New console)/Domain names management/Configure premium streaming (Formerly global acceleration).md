@@ -17,13 +17,13 @@ Premium streaming is a high-speed circuit between the region where the streamer 
 
     Before configuring premium streaming, log on to the [ApsaraVideo Live console](https://partners-intl.aliyun.com/login-required#/live), and confirm the region of the configured domain name in **Domains**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20697/154718987537027_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20697/154719394037027_en-US.png)
 
 -   If you want to use premium streaming, you must use edge ingestion function. For more information, see [Edge ingestion](../../../../../reseller.en-US/Product Introduction/Edge streaming.md#).
 
     When you associate domain names, the system automatically enable edge ingestion acceleration service. Before configuring premium streaming, confirm that you have associated ingest domain name and streaming domain name in **Domains** \> **Domain Settings** \> **Basic Settings** \> **Stream Ingest Information**. For more information about configuring edge ingestion, see [Configure edge ingestion](reseller.en-US/User Guide (New console)/Configure push streaming and live streaming/Configure edge ingestion.md#).
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20697/154718987521682_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20697/154719394021682_en-US.png)
 
 
 ## Procedure { .section}
@@ -33,11 +33,11 @@ Premium streaming is a high-speed circuit between the region where the streamer 
 3.  Select the Streaming Domain Name, and click **Stream Settings**.
 4.  Click **Premium Streaming** \> **Add**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20697/154718987521684_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20697/154719394021684_en-US.png)
 
 5.  In **Premium Streaming Acceleration Settings**, enter premium streaming parameters.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20697/154718987521685_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20697/154719394021685_en-US.png)
 
     -    **Application Name** The name of the video app. The **Application Name** must be the same with the **Application Name**, or the configuration does not take effect. For example, the **Application Name** in the ingest URL is **app**, and the **Application Name** of the global acceleration must also be **app**.
 
