@@ -7,23 +7,23 @@
 1.  登录 [OSS控制台](https://oss.console.aliyun.com/index?spm=5176.2020520107.1002.d10oss.3dfe962ekybGY)。
 2.  单击 **新建Bucket**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20702/154269545421762_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20702/154719949921762_zh-CN.png)
 
 3.  输入Bucket信息。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20702/154269545421763_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20702/154719949921763_zh-CN.png)
 
     **说明：** Bucket **区域** 与直播域名所在区域必须一致。如，直播域名所在区域是 **华东2**，因此，Bucket也必须选择 **华东2**。Bucket创建完成后，您可以根据使用需求来创建Bucket的文件夹。
 
 4.  在左侧Bucket列表中，单击您创建的Bucket名称，并单击 **文件管理** \> **新建目录**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20702/154269545521764_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20702/154719949921764_zh-CN.png)
 
     **说明：** 当您的录制文件较多时，创建目录是为了对录制内容进行分类，方便对录制内容进行管理。
 
 5.  在 **新建目录** 中，输入 **目录名**，并单击 **确定**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20702/154269545521765_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20702/154719949921765_zh-CN.png)
 
 
 ## 配置直播写入OSS权限 { .section}
@@ -34,11 +34,11 @@
 2.  在bucket列表中，选择新建的bucket，并单击 **基础设置**。
 3.  单击 **读写权限** 项下的 **设置**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20702/154269545521766_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20702/154719949921766_zh-CN.png)
 
 4.  选择 **公共读**，并单击 **保存**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20702/154269545521767_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20702/154719950021767_zh-CN.png)
 
     **说明：** 如果您想要配置bucket读写权限，必须先完成账号的实名认证。
 
@@ -51,11 +51,11 @@
 
 1.  在您所创建的bucket页面，单击 **域名管理** \> **绑定用户域名**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20702/154269545521768_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20702/154719950021768_zh-CN.png)
 
 2.  在 **绑定用户域名** 中，配置CDN加速域名，并单击 **提交**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20702/154269545521769_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20702/154719950021769_zh-CN.png)
 
     如果您仅对视频进行存储，可不用配置CDN加速域名。
 
