@@ -6,7 +6,7 @@
 
 |参数|类型|是否必须|描述|
 |Action|String|是|操作接口名，系统规定参数，取值：ForbidPushStream|
-|AppId|String|是|业务方APP ID。|
+|AppId|String|是|控制台创建应用所获取的AppID。|
 |RoomId|String|是|房间号，最多16位字符。|
 |UserData|String|是|业务方自定义数据。|
 |EndTime|String|是|为空表示永久禁流时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'
