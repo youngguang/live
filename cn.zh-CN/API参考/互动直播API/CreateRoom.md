@@ -7,7 +7,7 @@
 |参数|类型|是否必须|描述|
 |:-|:-|:---|:-|
 |Action|String|是|操作接口名，系统规定参数，取值：CreateRoom|
-|AppId|String|是|业务方APP ID。|
+|AppId|String|是|控制台创建应用所获取的AppID。|
 |RoomId|String|是|房间号，最多16位字符。|
 |AnchorId|String|是|房间主播ID，最多16位字符。|
 
@@ -16,7 +16,7 @@
 |参数|类型|描述|
 |:-|:-|:-|
 |RequestId|String|该条任务请求Id。|
-|AppId|String|业务方APP ID。|
+|AppId|String|控制台创建应用所获取的AppID。|
 |RoomId|String|房间号。|
 |AnchorId|String|房间主人ID。|
 
