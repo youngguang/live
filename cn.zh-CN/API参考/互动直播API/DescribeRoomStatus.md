@@ -7,7 +7,7 @@
 |参数|类型|是否必须|描述|
 |:-|:-|:---|:-|
 |Action|String|是|操作接口名，系统规定参数，取值：DescribeRoomStatus|
-|AppId|String|是|业务方APP ID。|
+|AppId|String|是|控制台创建应用所获取的AppID。|
 |RoomId|String|是|房间号，最多16位字符。|
 
 ## 返回参数 {#section_lzw_twz_lfb .section}
