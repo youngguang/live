@@ -7,7 +7,7 @@
 |参数|类型|是否必须|描述|
 |:-|:-|:---|:-|
 |Action|String|true|操作接口名，系统规定参数，取值：SendRoomUserNotification|
-|AppId|String|true|业务方APP ID。|
+|AppId|String|true|控制台创建应用所获取的AppID。|
 |RoomId|String|true|房间号，最多16位字符。|
 |AppUid|String|false|发送指令用户 ID，最多16位字符。|
 |ToAppUid|String|true|接收指令用户 ID，最多16位字符。|
