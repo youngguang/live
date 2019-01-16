@@ -7,7 +7,7 @@
 |参数|类型|是否必须|描述|
 |:-|:-|:---|:-|
 |Action|String|是|操作接口名，系统规定参数，取值：DescribeRoomList|
-|AppId|String|是|业务方APP ID。|
+|AppId|String|是|控制台创建应用所获取的AppID。|
 |RoomStatus|int|否|状态。-   0：流关闭，
 -   1：流开启，
 -   2：流中断。
