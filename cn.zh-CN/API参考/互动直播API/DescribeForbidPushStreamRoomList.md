@@ -7,7 +7,7 @@
 |参数|类型|是否必须|描述|
 |:-|:-|:---|:-|
 |Action|String|是|操作接口名，系统规定参数，取值：DescribeForbidPushStreamRoomList|
-|AppId|String|是|业务方APP ID。|
+|AppId|String|是|控制台创建应用所获取的AppID。|
 |Order|String|否|排序方式。默认：desc 降序
 
 |
