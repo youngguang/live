@@ -29,11 +29,11 @@ Currently, the hotlinking protection function supports the blacklist or whitelis
 4.  Click **Access Control**.
 5.  Select **Hotlinking Protection**, and click **Change Settings**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20695/154771223321668_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20695/154771564021668_en-US.png)
 
 6.  Select the **Blacklist**, and add a specified domain name in **Referrers**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20695/154771223321669_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20695/154771564021669_en-US.png)
 
      **Blacklist** is added successfully.
 
