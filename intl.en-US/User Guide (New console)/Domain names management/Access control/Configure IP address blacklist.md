@@ -14,11 +14,11 @@ Wherein, 24 indicates that the first 24 bits of the subnet mask are effective. T
 2.  Click **Domains**, select the domain name, and click **Domain Settings**.
 3.  Click **Access Control** \> **IP Address Blacklist**, and click **Change Settings**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20696/154771225521675_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20696/154771568121675_en-US.png)
 
 4.  In **IP Address blacklist**, enter the blacklist IP address.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20696/154771225621676_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20696/154771568121676_en-US.png)
 
      **IP Address blacklist** is configured successfully.
 
