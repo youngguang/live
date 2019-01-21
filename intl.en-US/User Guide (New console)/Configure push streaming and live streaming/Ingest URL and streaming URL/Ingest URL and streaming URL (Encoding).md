@@ -56,7 +56,7 @@ You must first configure encoding. ApsaraVideo Live supports default encoding an
         3.  Select the **Streaming Domain**, and click **Stream Settings**.
         4.  In **Encoding Settings**, select **Default**, and click **Add**.
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23686/154780289637638_en-US.png)
+            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23686/154806368837638_en-US.png)
 
     -   Configure custom encoding
         1.  Log on to the ApsaraVideo Live console.
@@ -64,7 +64,7 @@ You must first configure encoding. ApsaraVideo Live supports default encoding an
         3.  Select the **Streaming Domain**, and click **Stream Settings**.
         4.  In **Encoding Settings**, select **Custom**, and click **Add**.
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23686/154780289637640_en-US.png)
+            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23686/154806368837640_en-US.png)
 
 2.  Get ID.
     -   Get the ID in the ApsaraVideo Live console.
