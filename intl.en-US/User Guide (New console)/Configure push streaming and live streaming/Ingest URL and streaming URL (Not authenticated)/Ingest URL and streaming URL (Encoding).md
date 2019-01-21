@@ -4,9 +4,9 @@ In some special scenarios, the authentication operation must be disabled. This a
 
 **Note:** 
 
--   This article introduces how to get the spliced URLs manually. You can also get the ingest URL and the streaming URL in the console. For more information, see [Configure edge ingestion](intl.en-US/User Guide (New console)/Configure push streaming and live streaming/Configure edge ingestion.md#).
--   If you want to create multiple live activities , you can also splice the ingest URL and the streaming URL in bulk. For more information , see [Create multiple live activities](intl.en-US/User Guide (New console)/Configure push streaming and live streaming/Create multiple live activities.md#).
--   If you don't configure encoding service for your live activities, for more information about the splicing rules of ingest URL and streaming URL, see [Ingest URL and streaming URL \(Original\)](intl.en-US/User Guide (New console)/Configure push streaming and live streaming/Ingest URL and streaming URL (Not authenticated)/Ingest URL and streaming URL (Original).md#).
+-   This article introduces how to get the spliced URLs manually. You can also get the ingest URL and the streaming URL in the console. For more information, see [Configure edge ingestion](reseller.en-US/User Guide (New console)/Configure push streaming and live streaming/Configure edge ingestion.md#).
+-   If you want to create multiple live activities , you can also splice the ingest URL and the streaming URL in bulk. For more information , see [Create multiple live activities](reseller.en-US/User Guide (New console)/Configure push streaming and live streaming/Create multiple live activities.md#).
+-   If you don't configure encoding service for your live activities, for more information about the splicing rules of ingest URL and streaming URL, see [Ingest URL and streaming URL \(Original\)](reseller.en-US/User Guide (New console)/Configure push streaming and live streaming/Ingest URL and streaming URL (Not authenticated)/Ingest URL and streaming URL (Original).md#).
 -   In this article, the ingest URL and the streaming URL in the example are for your reference only. You can follow the splicing rules to get your own ingest URL and streaming URL by using your ingest domain, streaming domain, Application Name, Stream Name and the authentication string obtained by authentication.
 
 ## Prerequisites {#section_rx2_vkx_wfb .section}
@@ -15,15 +15,15 @@ Perform the following operations to get the ingest URL and streaming URL:
 
 -   Add a domain name
 
-    You must first created an ingest domain and a streaming domain that have completed ICP filing. For more information, see [Add a domain name](intl.en-US/User Guide (New console)/Domain names management/Manage a domain name/Add a domain name.md#).
+    You must first created an ingest domain and a streaming domain that have completed ICP filing. For more information, see [Add a domain name](reseller.en-US/User Guide (New console)/Domain names management/Manage a domain name/Add a domain name.md#).
 
 -   Configure CNAME
 
-    After adding a domain, you must configure the CNAME for it to take effect. For more information about how to configure CNAME, see [Configure CNAME](intl.en-US/User Guide (New console)/Domain names management/Configure CNAME.md#).
+    After adding a domain, you must configure the CNAME for it to take effect. For more information about how to configure CNAME, see [Configure CNAME](reseller.en-US/User Guide (New console)/Domain names management/Configure CNAME.md#).
 
 -   Associate domain names
 
-    After creating domain names, you must associate the ingest domain and the streaming domain before you perform stream ingestion and live streaming operations. For more information, see [Associate domain names](intl.en-US/User Guide (New console)/Domain names management/Manage a domain name/Associate domain names.md#).
+    After creating domain names, you must associate the ingest domain and the streaming domain before you perform stream ingestion and live streaming operations. For more information, see [Associate domain names](reseller.en-US/User Guide (New console)/Domain names management/Manage a domain name/Associate domain names.md#).
 
 
 ## How do I get encoding ingest URL? {#section_hyt_qf5_xfb .section}
@@ -45,20 +45,11 @@ You must first configure encoding. ApsaraVideo Live supports universal encoding 
 
 1.  Configure encoding templates.
     -   Configure default encoding
-        1.  Log on to the [ApsaraVideo Live console](https://partners-intl.aliyun.com/login-required#/live).
-        2.  Click **Domains**.
-        3.  Select the **Streaming Domain**, and click **Stream Settings**.
-        4.  In **Encoding Settings**, select **Default**, and click **Add**.
+        1.  Click **Domains**.
+        2.  Select the **Streaming Domain**, and click **Stream Settings**.
+        3.  In **Encoding Settings**, select **Default**, and click **Add**.
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23686/154780323137638_en-US.png)
-
-        5.  Enter encoding settings parameters. You can select the corresponding ID based on your configuration.
-
-            Narrowband HD™
-
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23686/154780323133032_en-US.png)
-
-            **Note:** For more information, see [Default encoding](intl.en-US/User Guide (New console)/Transcoding management/Universal Transcoding.md#).
+            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23686/154806375337638_en-US.png)
 
     -   Configure custom encoding
         1.  Log on to the ApsaraVideo Live console.
@@ -66,15 +57,7 @@ You must first configure encoding. ApsaraVideo Live supports universal encoding 
         3.  Select the **Streaming Domain**, and click **Stream Settings**.
         4.  In **Encoding settings**, select **Custom**, and click **Add**.
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23686/154780323237640_en-US.png)
-
-        5.  Enter the encoding setting parameters. You can select the corresponding ID based on your configurations.
-
-            Narrowband HD™
-
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23686/154780323233039_en-US.png)
-
-            **Note:** For more information about custom encoding, see [Custom encoding](intl.en-US/User Guide (New console)/Transcoding management/Custom transcoding.md#).
+            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23686/154806375337640_en-US.png)
 
 2.  Get ID.
     -   Get the ID in the ApsaraVideo Live console.
@@ -99,6 +82,6 @@ You must first configure encoding. ApsaraVideo Live supports universal encoding 
         -   RTMP-based streaming URL `rtmp://play.aliyunlive.com/app/stream_sd`
         -   FLV-based streaming URL `http://play.aliyunlive.com/app/stream_sd.flv?`
         -   HLS-based streaming URL `http://play.aliyunlive.com/app/stream_sd.m3u8`
-        **Note:** M3u8 encoding URL is already supported. If you have more requirements, [Open a ticket](https://workorder-intl.console.aliyun.com/?spm=5176.2020520001.aliyun_topbar.16.3ef74bd3qb8ZQs#/overview).
+        **Note:** M3u8 encoding URL is already supported. If you have more requirements, open a ticket.
 
 
