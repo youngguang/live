@@ -19,24 +19,24 @@
 2.  单击 **域名管理**。
 3.  选择所需的播流域名，并单击 **模板管理**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20703/154719952721779_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20703/154838652721779_zh-CN.png)
 
 4.  在左侧导航栏中，单击 **录制配置**。
 5.  选择 **存储至OSS**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20703/154719952721780_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20703/154838652721780_zh-CN.png)
 
     **说明：** 使用存储至OSS，您需要授权视频直播可将视频内容写入OSS产品的权限，授权后才能将视频存储至指定的OSS bucket中。详情参见 [配置OSS](intl.zh-CN/用户指南/录制管理/录制存储至OSS/配置OSS.md#)。
 
 6.  添加录制回调。详情参见 [录制回调](intl.zh-CN/用户指南/录制管理/录制存储至OSS/录制回调.md#)。
 7.  单击 **添加**，并在 **录制模板**中输入录制配置信息。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20703/154719952721781_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20703/154838652721781_zh-CN.png)
 
     -    **AppName**：视频的应用名称，输入的 **AppName** 必须与直播推流的 **AppName** 保持一致方可生效。如：推流地址中**AppName**设置为`app`，则录制**AppName**也需为`app`。如果您想要进行域名级别录制，输入星号（\*）号即可。
     -    **StreamName**：存储至OSS支持流级别的录制。您只需输入指定的流名称即可。如果您想要进行全部流录制，即该`AppName`下的流全部录制，输入星号（\*）号即可。
 
-        **说明：** **AppName**与**StreamName**参数支持英文，数字，"-"，"\_","."符号，长度限制在50字符以内。
+        **说明：** **AppName**与**StreamName**参数支持英文、数字、"-"、"\_"符号，长度限制在255字符以内。
 
     -    **存储格式**：支持 **flv**、**m3u8**、**mp4**三种格式。
     -   **存储规则**：默认的存储路径为：

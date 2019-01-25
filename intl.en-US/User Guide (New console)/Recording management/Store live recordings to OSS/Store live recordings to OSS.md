@@ -8,7 +8,7 @@ Under a live video CDN domain name, the live recording configurations are differ
 
 -   To store live recordings to OSS, you must first enable OSS service, and provides ApsaraVideo Live service with the access authorization of writing in OSS. Then you can store videos in specific OSS bucket. For more information, see [Configure OSS](reseller.en-US/User Guide (New console)/Recording management/Store live recordings to OSS/Configure OSS.md#).
 
--   To avoid recored files abnormally cut off due to network jitter or temporary stream disconnection during live recording, the system disconnects the stream until 180s. That is, if you perform another streaming operation within 180s after stream disconnection, the system judges it as the same stream by default; if the time interval exceeds 180s, the system judges it as two different streams.
+-   To avoid recorded files abnormally cut off due to network jitter or temporary stream disconnection during live recording, the system disconnects the stream until 180s. That is, if you perform another streaming operation within 180s after stream disconnection, the system judges it as the same stream by default; if the time interval exceeds 180s, the system judges it as two different streams.
 
 
 ## Create live recordings { .section}
@@ -17,24 +17,24 @@ Under a live video CDN domain name, the live recording configurations are differ
 2.  Click **Domain Names.**.
 3.  Select the stream play domain name, and click **Template Set**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20703/154719953521779_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20703/154838653221779_en-US.png)
 
 4.  In the left-side navigation pane, click **Recording**.
 5.  Select **Store to OSS**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20703/154719953521780_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20703/154838653221780_en-US.png)
 
     **Note:** To store live recordings to OSS, you must provide ApsaraVideo Live service with the access authorization of writing in OSS. Then you can store videos in specific OSS bucket. For more information, see [Configure OSS](reseller.en-US/User Guide (New console)/Recording management/Store live recordings to OSS/Configure OSS.md#).
 
 6.  Add callback URL. For more information, see [Recording callback URL](reseller.en-US/User Guide (New console)/Recording management/Store live recordings to OSS/Recording callback URL.md#).
 7.  Click **Add**, and enter recording parameters in **Recording Template**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20703/154719953521781_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/20703/154838653221781_en-US.png)
 
     -    **AppName**: The name of the video app. The **AppName** must be the same with the **AppName** of the live stream, or the configuration does not take effect. For example, the **AppName** in streaming address is `app`, and the **AppName** of the recording parameter must also be`app`. If you want to configure domain-level recording parameter, enter wildcard \(\*\).
     -    **StreamName**: The system supports recording at stream level. You can enter the stream name that you want to record. If you want to record all the streams under the `AppName`, enter wildcard \(\*\).
 
-        **Note:** **AppName** and **StreamName** parameters support upper case letters, lower case letters, number, hyphen \(-\), underline \(\_\) and period \(.\). The length is limited within 50 characters.
+        **Note:** **AppName** and **StreamName** parameters support upper case letters, lower case letters, number, hyphen \(-\) and underline \(\_\). The length is limited within 255 characters.
 
     -    **Storage Format/Format**: The system supports **flv**, **m3u8**, and **mp4** formats.
     -    **Naming Conventions**：The default storage path for recordings is:
