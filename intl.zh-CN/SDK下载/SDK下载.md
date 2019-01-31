@@ -18,8 +18,8 @@
 |魔法相机| | | |√|
 |人脸贴图| | | |√|
 |视频上传| | | |√|
-|iOS下载|[V3.3.7](http://vod-download.cn-shanghai.aliyuncs.com/sdk/pusher/ApsaraVideo_Pusher_v3.3.7_iOS_20181012.zip)|[V3.4.9](https://vod-download.cn-shanghai.aliyuncs.com/sdk/player/3.4.9/ApsaraVideo_videoPlay_v3.4.9_iOS_20190104.zip)|仅限邀测|[V1.0.0](https://vod-download.cn-shanghai.aliyuncs.com/sdk/ApsaraVideo/ApsaraVideo_iOS_20180712.zip)|
-|Android下载|[V3.3.7](http://vod-download.cn-shanghai.aliyuncs.com/sdk/pusher/ApsaraVideo_Pusher_v3.3.7_Android_20181026.zip)|[V3.4.9](https://vod-download.cn-shanghai.aliyuncs.com/sdk/player/3.4.9/ApsaraVideo_videoPlay_v3.4.9_Android_20190104.zip)|仅限邀测|[V1.0.0](https://vod-download.cn-shanghai.aliyuncs.com/sdk/ApsaraVideo/ApsaraVideo_20180712.zip)|
+|iOS下载|[V3.3.7](http://vod-download.cn-shanghai.aliyuncs.com/sdk/pusher/ApsaraVideo_Pusher_v3.3.7_iOS_20181012.zip)|[V3.4.9](https://vod-download.cn-shanghai.aliyuncs.com/sdk/player/3.4.9/ApsaraVideo_videoPlay_v3.4.9_iOS_20190104.zip)|[V1.2.2](http://vod-download.cn-shanghai.aliyuncs.com/sdk/interactiveLive/AlivcInteractive_v1.2.2_iOS.zip)|[V1.0.0](https://vod-download.cn-shanghai.aliyuncs.com/sdk/ApsaraVideo/ApsaraVideo_iOS_20180712.zip)|
+|Android下载|[V3.3.7](http://vod-download.cn-shanghai.aliyuncs.com/sdk/pusher/ApsaraVideo_Pusher_v3.3.7_Android_20181026.zip)|[V3.4.9](https://vod-download.cn-shanghai.aliyuncs.com/sdk/player/3.4.9/ApsaraVideo_videoPlay_v3.4.9_Android_20190104.zip)|[V1.2.2](http://vod-download.cn-shanghai.aliyuncs.com/sdk/interactiveLive/AlivcInteractive_v1.2.2_android.zip)|[V1.0.0](https://vod-download.cn-shanghai.aliyuncs.com/sdk/ApsaraVideo/ApsaraVideo_20180712.zip)|
 
 **说明：** 
 
