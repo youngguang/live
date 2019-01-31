@@ -76,9 +76,7 @@
 
     -   美颜设置（主播端设置）
 
-        ```
         此参数设置主播默认是否开始美颜，默认为开美颜。
-        ```
 
         ```
         mAlivcILiveRoom.setBeautyOn(true);
@@ -235,10 +233,6 @@
         mAlivcILiveRoom.changePushResolutionMode(AlivcResolutionMode.RESOLUTION_540P); // 设置推流分辨率为540P
         ```
 
-        ```
-        <span data-type="color" style="color:#262626"> </span>
-        ```
-
         **说明：** 在主播进房间成功之后，不允许切换推流分辨率。
 
     3.  主播进房间
@@ -334,10 +328,11 @@
                         //检查当前是否在直播
                         if (alivcEnterRoomResult.roomStatus == AlivcLiveRoomStatus.ROOM_ENTERED.getStatus()) {
                             //根据主播uid设置主播视频播放view
-                            mAlivcILiveRoom.setRemoteView(roomResult.mStreamerId, mAlivcLiveRoomView);                                  
+                            mAlivcILiveRoom.setRemoteView(roomResult.anchorAppUid, mAlivcLiveRoomView);                                  
                         }
                     });
                 }
+                
                 @Override
                 public void onFailure(AlivcCommonError commonError) {
                     //处理进入直播间错误的操作，根据错误码查看具体错误原因
@@ -429,7 +424,9 @@ public void onNotifyDownMic(Object iRoom, String userId) {
 
 -   发送聊天信息
 
-    发送聊天消息调用接口sendChatMessage接口，参数content为聊天内容字符串，userData为用户自定义数据，会和content一起通知。由于聊天content支持文字和表情符号，为了防止编码非UTF-8编码在通过服务端透传时产生乱码问题，建议您在使用时对content进行base64编码处理，收到消息通知后再对content进行base64解码后再显示，服务端对消息长度的限制为string长度不能超过512，超过最大长度则发送消息失败，即在发送消息时对content进行base64编码后长度不能超过512。
+    发送聊天消息调用接口sendChatMessage接口，参数content为聊天内容字符串，userData为用户自定义数据，会和content一起通知。
+
+    由于聊天content支持文字和表情符号，为了防止编码非UTF-8编码在通过服务端透传时产生乱码问题，建议您在使用时对content进行base64编码处理，收到消息通知后再对content进行base64解码后再显示，服务端对消息长度的限制为string长度不能超过512，超过最大长度则发送消息失败，即在发送消息时对content进行base64编码后长度不能超过512。
 
     **说明：** 如果已经上线了旧版的App中没有对聊天content进行base64编码，而新版本中使用了base64编码，会出现新老版本聊天消息不兼容问题，请您确保App的所有端和版本使用同一套编码方案，否则会出现兼容性问题。
 
@@ -503,6 +500,44 @@ public void onNotifyDownMic(Object iRoom, String userId) {
     ```
 
     **说明：** 此接口一定要在进房间成功之后调用。
+
+-   踢出房间
+
+    踢出房间和解除踢出房间接口用于直播间踢人功能，这两个接口调用时没有角色限制，主播和观众都可以调用，App可以根据自己的业务来设计拥有踢人权限的角色。
+
+    踢出房间，参数为被踢用户的id、自定义userData，以及duration。duration 为踢出时间，单位：秒，取值0表示本次踢出，被踢用户可以立刻再次进入房间，其他值表示被踢出持续多少秒之内不能再次进入。比如传入10，被踢出的用户在10秒内再次进入房间会失败，10秒后进入才会成功。用户被踢出房间后，该直播间内所有用户都会收到通知。
+
+    ```
+    mAlivcILiveRoom.kickout(mUserId, mUserData, 15 * 60,
+        new IAlivcCallback<AlivcCommonSuccess, AlivcCommonError>() {
+            @Override
+            public void onSuccess(AlivcCommonSuccess commonSuccess) {
+                //处理踢人成功的相关操作
+            }
+    
+            @Override
+            public void onFailure(AlivcCommonError commonError) {
+                //处理踢人失败的相关操作
+            }
+    });
+    ```
+
+    取消踢出接口，主要是踢人的时候带上了持续时间duration，导致该用户在一段时间内不能够再次进入直播间，如果需要取消此状态，就调用取消踢出接口，该接口调用后，被踢出的用户可以立刻再次进入直播间。
+
+    ```
+    mAlivcILiveRoom.cancelKickout(mUserId,
+        new IAlivcCallback<AlivcCommonSuccess, AlivcCommonError>() {
+        @Override
+        public void onSuccess(AlivcCommonSuccess commonSuccess) {
+            //处理解除踢人成功的相关操作
+        }
+        
+        @Override
+        public void onFailure(AlivcCommonError commonError) {
+            //处理解除踢人失败的相关操作
+        }
+    });
+    ```
 
 
 ## 播放控制 {#section_k4n_5yf_2gb .section}
@@ -815,7 +850,9 @@ SDK 根据不同的接口调用会有以下几种类型的通知回调，有些�
 
 -   观众端如何判断直播开始和直播结束？
 
-    直播开始，观众端SDK会回调通知onNotifyUpMic直播结束，观众端SDK会回调通知onNotifyDownMic
+    直播开始，观众端SDK会回调通知onNotifyUpMic。
+
+    直播结束，观众端SDK会回调通知onNotifyDownMic。
 
 -   如何发送用户进出房间通知？
 
@@ -823,7 +860,9 @@ SDK 根据不同的接口调用会有以下几种类型的通知回调，有些�
 
 -   主播切换前后台如何处理？
 
-    在主播端退后台，App可以不用做任何处理，SDK已经处理了这种情况。SDK中在主播切换后台的时候，会停止相机的采集，只采集麦克风的音频数据，如果设置了退后台图片，主播端就会推这张图片，观众端观看的效果就是能够听到主播的声音，看到设置的一帧图片。如果没有设置了退后台图片，观众端的视频就会卡在主播退后台前一帧画面。
+    在主播端退后台，App可以不用做任何处理，SDK已经处理了这种情况。
+
+    SDK中在主播切换后台的时候，会停止相机的采集，只采集麦克风的音频数据，如果设置了退后台图片，主播端就会推这张图片，观众端观看的效果就是能够听到主播的声音，看到设置的一帧图片。如果没有设置了退后台图片，观众端的视频就会卡在主播退后台前一帧画面。
 
 -   进房间的用户id可以使用业务方自己的用户id吗？
 
@@ -842,11 +881,11 @@ SDK 根据不同的接口调用会有以下几种类型的通知回调，有些�
     如果主播直播中App进程异常退出，观众端会提示播放结束onPlayerStopped通知回调：
 
     -   如果主播在5分钟内没有再次开启App进入同样的房间恢复直播，在App进程异常退出5分钟后，服务端会将该主播的状态强制设置为直播结束，所有观众端会收到主播停止直播onNotifyDownMic通知。
-    -   如果主播在5分钟内再次开启App进入同样的房间恢复直播，那么直播继续，但是播放已经断开的观众端不会自动播放，建议观众端在收到onPlayerStopped，提示直播中断，调用reconnect接口重连后就可以继续播放。
+    -   如果主播在5分钟内再次开启App进入同样的房间恢复直播，直播继续，但是播放已经断开的观众端不会自动播放，建议观众端在收到onPlayerStopped，提示直播中断，调用reconnect接口重连后就可以继续播放。
     主播长时间断网的处理也与这个行为一致：
 
     -   如果断网5分钟以上，服务端会将该主播的状态强制设置为直播结束，所有观众端会收到主播停止直播onNotifyDownMic通知。
-    -   如果5分钟内连上网络恢复直播，那么直播继续，但是播放已经断开的观众端不会自动播放，建议观众端在收到onPlayerStopped，提示直播中断，调用reconnect接口重连后就可以继续播放。
+    -   如果5分钟内连上网络恢复直播，直播继续，但是播放已经断开的观众端不会自动播放，建议观众端在收到onPlayerStopped，提示直播中断，调用reconnect接口重连后就可以继续播放。
 -   如何分享直播地址？
 
     SDK提供接口getPlayUrlInfo用于获取当前直播的播放地址，包含flv 和m3u8格式的两种类型。
