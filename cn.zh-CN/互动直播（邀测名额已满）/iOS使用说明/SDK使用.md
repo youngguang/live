@@ -222,10 +222,6 @@
         [self.liveRoom setResolution:AlivcLivePushResolution540P]; // 设置推流分辨率为540P
         ```
 
-        ```
-        <span data-type="color" style="color:#262626"> </span>
-        ```
-
         **说明：** 在主播进房间成功之后，不允许切换推流分辨率。
 
     3.  主播进房间
@@ -247,6 +243,18 @@
              //主播开始直播通知
         }
         ```
+
+        设置主播端预览窗口view的显示模式
+
+        此接口可以设置主播端预览view的显示模式，默认为等比例全屏模式。
+
+        -   AlivcLiveScalingModeAspectFit（等比例显示，当视频比例和屏幕比例不一致时，会有黑边）。
+        -   AlivcLiveScalingModeAspectFitWithCropping（等比例全屏显示，当视频比例和屏幕比例不一致时，画面会有裁剪）。
+        ```
+        [self.liveRoom setScalingMode:AlivcLiveScalingModeAspectFitWithCropping];
+        ```
+
+        **说明：** 此接口必须要在调用startPreview之后设置。
 
 -   观众进入直播间
     1.  进入房间
@@ -294,6 +302,19 @@
         ```
 
         **说明：** 不管直播间是否已经直播，此步骤一定要执行，因为直播拉流播放都是显示到此view上。
+
+        设置观众端播放窗口view的显示模式
+
+        此接口可以设置观众端播放view的显示模式，默认为等比例全屏模式。
+
+        -   AlivcLiveScalingModeAspectFit （等比例显示，当视频比例和屏幕比例不一致时，会有黑边）。
+        -   AlivcLiveScalingModeAspectFitWithCropping（等比例全屏显示，当视频比例和屏幕比例不一致时，画面会有裁剪）。
+        ```
+        [self.liveRoom setScalingMode:AlivcLiveScalingModeAspectFitWithCropping];
+        
+        ```
+
+        **说明：** 此接口必须要在调用setRemoteView之后设置。
 
 
 ## 退出直播间 {#section_wb3_hzk_2gb .section}
@@ -356,7 +377,9 @@
 
 -   发送聊天信息。
 
-    发送聊天消息调用接口sendChatMessage接口，参数content为聊天内容字符串，userData为用户自定义数据，会和content一起通知出去。由于聊天content支持文字和表情符号，为了防止编码非UTF-8编码在通过服务端透传时产生乱码问题，建议您使用时对content进行base64编码处理，收到消息通知后再对content进行base64解码后再显示，服务端对消息长度的限制为string长度不能超过512，超过最大长度则发送消息失败，即在发送消息时对content进行base64编码后长度不能超过512。
+    发送聊天消息调用接口sendChatMessage接口，参数content为聊天内容字符串，userData为用户自定义数据，会和content一起通知出去。
+
+    由于聊天content支持文字和表情符号，为了防止编码非UTF-8编码在通过服务端透传时产生乱码问题，建议您使用时对content进行base64编码处理，收到消息通知后再对content进行base64解码后再显示，服务端对消息长度的限制为string长度不能超过512，超过最大长度则发送消息失败，即在发送消息时对content进行base64编码后长度不能超过512。
 
     **说明：** 如果已经上线旧版App中没有对聊天content进行base64编码，而新版本中使用了base64编码，会出现新老版本聊天消息不兼容问题，请您确保App的所有端和版本使用同一套编码方案，否则会出现兼容性问题。
 
@@ -380,7 +403,9 @@
 
 -   聊天消息通知
 
-    主播和观众在进入直播间时都可以查询房间内已收到的点赞数聊天消息的下行通知，通过实现代理AlivcInteractiveNotifyDelegate中的onAlivcInteractiveChatMsg方法来接收聊天通知，同样被base64编码后的content需要使用base64解码后显示。
+    主播和观众在进入直播间时都可以查询房间内已收到的点赞数。
+
+    聊天消息的下行通知，通过实现代理AlivcInteractiveNotifyDelegate中的onAlivcInteractiveChatMsg方法来接收聊天通知，同样被base64编码后的content需要使用base64解码后显示。
 
     **说明：** 如果已经上线了旧版的App中没有对聊天content进行base64编码，而新版本中使用了base64编码，会出现新老版本聊天消息不兼容问题，请您确保App的所有端和版本使用同一套编码方案，否则会出现兼容性问题。
 
@@ -413,6 +438,35 @@
 
     **说明：** 此接口一定要在进房间成功之后调用。
 
+-   踢出房间
+
+    踢出房间和解除踢出房间接口用于直播间踢人功能，这两个接口调用时没有角色限制，主播和观众都可以调用，App可以根据自己的业务来设计拥有踢人权限的角色。
+
+    踢出房间，参数为被踢用户的id、自定义userData，以及duration。duration 为踢出时间，单位秒，取值0表示本次踢出，被踢用户可以立刻再次进入房间，其他值表示被踢出持续多少秒之内不能再次进入。比如传入10，被踢出的用户在10秒内再次进入房间会失败，10秒后进入才会成功。
+
+    ```
+    //踢出房间
+    [self.liveRoom kickout:userId userData:@"userData" duration:10 completion:^(AlivcLiveError *error) {
+    
+    }];
+    ```
+
+    用户被踢出房间后，该直播间内所有用户都会收到通知。
+
+    ```
+    - (void)onAlivcRoomKickOutUserId:(NSString *)userId userData:(NSString *)userData{
+    }
+    ```
+
+    取消踢出接口，主要是踢人时带上了持续时间duration，导致该用户在一段时间内不能够再次进入直播间，如果需要取消此状态，就调用取消踢出接口，该接口调用后，被踢出的用户可以立刻再次进入直播间。
+
+    ```
+    //取消踢出
+    [self.liveRoom cancelKickout:userId completion:^(AlivcLiveError *error) {
+    
+    }];
+    ```
+
 
 ## 播放控制 {#section_iqf_w1l_2gb .section}
 
@@ -422,8 +476,14 @@
 
     观众进入直播间观看直播流，SDK内部会启动播放器进行拉流播放，拉流播放操作是有以下两种情况：
 
-    -   观众进入直播间时，主播正在直播，在进入房间成功之后，App 调用接口setRemoteView时，SDK内部发现主播正在直播，会开始拉流播放。
-    -   观众进入直播间时，主播没有直播，稍后主播开启直播。在进入房间成功之后，App 调用接口setRemoteView时，SDK内部发现主播没有直播，此时不会拉流播放，APP 根据房间状态来提示直播没有开始，当主播开始直播时，SDK 会收到主播直播的通知，然后自动开始直播。
+    -   观众进入直播间时，主播正在直播。
+
+        在进入房间成功之后，App 调用接口setRemoteView时，SDK内部发现主播正在直播，会开始拉流播放。
+
+    -   观众进入直播间时，主播没有直播，稍后主播开启直播。
+
+        在进入房间成功之后，App 调用接口setRemoteView时，SDK内部发现主播没有直播，此时不会拉流播放，APP 根据房间状态来提示直播没有开始，当主播开始直播时，SDK 会收到主播直播的通知，然后自动开始直播。
+
     SDK 拉流播放成功会通过AlivcLiveRoomPlayerNotifyDelegate回调的onAlivcPlayerStarted给APP通知播放开始。
 
     ```
@@ -710,15 +770,19 @@ SDK 根据不同的接口调用会有以下几种类型的通知回调，有些�
 
 -   观众端如何判断直播开始和直播结束？
 
-    直播开始，观众端SDK会回调通知onAlivcRoomUpMic直播结束，观众端SDK会回调通知onAlivcRoomDownMic。
+    直播开始，观众端SDK会回调通知onAlivcRoomUpMic。
+
+    直播结束，观众端SDK会回调通知onAlivcRoomDownMic。
 
 -   如何发送用户进出房间通知？
 
-    SDK 没有定义用户进出房间的通知，而是业务方通过服务端接口SendRoomNotification发送自定义房间消息，App自己定义进出房间的消息字段，在进出房间成功之后，通过接口SendRoomNotification发送给互动直播服务端，服务端会下发消息给互动直播客户端SDK， SDK 会回调通知onAlivcRoomCustomMsgNotify将自定义房间消息回调给App，App通过解析自定义消息体，就能实现进出房间的通知。
+    SDK 没有定义用户进出房间的通知，而是业务方通过服务端接口SendRoomNotification发送自定义房间消息，App自己定义进出房间的消息字段，在进出房间成功之后，通过接口SendRoomNotification发送给互动直播服务端，服务端会下发消息给互动直播客户端SDK， SDK会回调通知onAlivcRoomCustomMsgNotify将自定义房间消息回调给App，App通过解析自定义消息体，就能实现进出房间的通知。
 
 -   主播切换前后台如何处理？
 
-    在主播端退后台，App可以不用做任何处理，SDK已经处理了这种情况。SDK 中在主播切换后台的时候，会停止相机的采集，只采集麦克风的音频数据，如果设置了退后台图片，主播端就会推这张图片，观众端观看的效果就是能够听到主播的声音，看到设置的一帧图片。如果没有设置了退后台图片，观众端的视频就会卡在主播退后台前一帧画面。
+    在主播端退后台，App可以不用做任何处理，SDK已经处理了这种情况。
+
+    SDK 中在主播切换后台的时候，会停止相机的采集，只采集麦克风的音频数据，如果设置了退后台图片，主播端就会推这张图片，观众端观看的效果就是能够听到主播的声音，看到设置的一帧图片。如果没有设置了退后台图片，观众端的视频就会卡在主播退后台前一帧画面。
 
 -   进房间的用户id可以使用业务方自己的用户id吗？
 
@@ -736,8 +800,8 @@ SDK 根据不同的接口调用会有以下几种类型的通知回调，有些�
 
     如果主播直播中APP进程异常退出，观众端会提示播放结束onAlivcPlayerStopped通知回调：
 
-    -   如果主播在5分钟内没有再次开启App进入同样的房间恢复直播的话，在App进程异常退出5分钟后，服务端会将该主播的状态强制设置为直播结束，所有观众端会收到主播停止直播onAlivcRoomDownMic通知。
-    -   如果主播在5分钟内再次开启App进入同样的房间恢复直播的话，那么直播继续，但是播放已经断开的观众端不会自动播放，建议观众端在收到onAlivcPlayerStopped，提示直播中断，调用reconnect接口重连后就可以继续播放。
+    -   如果主播在5分钟内没有再次开启App进入同样的房间恢复直播，在App进程异常退出5分钟后，服务端会将该主播的状态强制设置为直播结束，所有观众端会收到主播停止直播onAlivcRoomDownMic通知。
+    -   如果主播在5分钟内再次开启App进入同样的房间恢复直播，直播继续，但是播放已经断开的观众端不会自动播放，建议观众端在收到onAlivcPlayerStopped，提示直播中断，调用reconnect接口重连后就可以继续播放。
     主播长时间断网的处理也与这个行为一致：
 
     -   如果断网5分钟以上，服务端会将该主播的状态强制设置为直播结束，所有观众端会收到主播停止直播onAlivcRoomDownMic通知。
