@@ -26,9 +26,9 @@ If a subaccount is required to use ApsaraVideo Live, you must grant the subaccou
 2.  Click **Users**.
 3.  Select User Name and click **Authorize** from the Actions column to grant the `AliyunLiveFullAccess`permission to the specified subaccount.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64551/154899273332528_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64551/154899299732528_en-US.png)
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64551/154899273332529_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64551/154899299732529_en-US.png)
 
 
 **MTS service authorization**
@@ -39,9 +39,7 @@ If a subaccount is required to use MTS, you must grant the subaccount the permis
 2.  Click **Users**.
 3.  Select User Name and click **Authorize** from the Actions column to grant the `AliyunMTSFullAccess`permission to the specified subaccount.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64551/154899273332533_en-US.png)
-
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64551/154899273332535_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64551/154899299732533_en-US.png)
 
 
 **Description of custom authorization policy creation**
@@ -53,15 +51,15 @@ You can customize authorization policies and assign them to specified subaccount
 3.  Click **Custom Policy**.
 4.  Click **Create Authorization Policy**to create custom authorization policies as the following samples for the specified resource instance and grant the policies to the specified subaccount.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64551/154899273432536_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64551/154899299732536_en-US.png)
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64551/154899273432537_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64551/154899299732537_en-US.png)
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64551/154899273432538_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64551/154899299732538_en-US.png)
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64551/154899273432539_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64551/154899299732539_en-US.png)
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64551/154899273432540_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64551/154899299732540_en-US.png)
 
     **Note:** After the authorization policies are created for various service resource objects, you can grant the permissions to the corresponding subaccounts.
 
@@ -136,7 +134,7 @@ Permission description:
 
     **$Uid**: Alibaba Cloud account ID. You can query it through **Alibaba Cloud console** \> **Account Management** \> **Security Settings**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64551/154899273432544_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/64551/154899299732544_en-US.png)
 
 -   Bucket
 
