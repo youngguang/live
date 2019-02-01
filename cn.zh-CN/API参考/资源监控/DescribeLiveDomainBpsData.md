@@ -27,7 +27,7 @@
 -   格式为：YYYY-MM-DDThh:mm:ssZ。
 -   最小数据粒度为5分钟。
 -   最大数据粒度为1天。
--   最长可查询45天内的数据。
+-   最长可查询90天内的数据。
 
  |
 |EndTime|String|否|2017-12-10T21:00:00Z| 结束时间需大于起始时间。
@@ -36,9 +36,17 @@
 -   格式为：YYYY-MM-DDThh:mm:ssZ。
 -   最小数据粒度为5分钟。
 -   最大数据粒度为1天。
--   最长可查询45天内的数据。
+-   最长可查询90天内的数据。
 
  |
+|Interval|String|否|300| 查询数据的时间粒度。
+
+-   支持300, 3600, 14400, 28800和86400秒。
+-   不传和传的值不支持时，使用默认值300秒。
+
+ |
+|IspNameEn|String|否|telecom|运营商英文名，通过DescribeCdnRegionAndIsp接口获得，不传为所有运营商。|
+|LocationNameEn|String|否|beijing|区域英文名，通过DescribeCdnRegionAndIsp接口获得，不传为所有区域。|
 
 ## 返回参数 { .section}
 
