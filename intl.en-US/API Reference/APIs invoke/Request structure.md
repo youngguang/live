@@ -10,6 +10,8 @@ The API service access address is as follows:
 |China North 2|
 |Singapore|
 
+**Note:** `live.aliyuncs.com` is ApsaraVideo Live endpoint.
+
 ## Communication protocol { .section}
 
 We recommend that you send requests using the HTTPS channel for enhanced security.
