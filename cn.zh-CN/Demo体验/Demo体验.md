@@ -15,6 +15,6 @@
 
 -   [短视频SDK](https://help.aliyun.com/document_detail/53407.html?spm=a2c4g.11186623.2.13.761d59d5x12hS5)
 -   [播放器SDK](https://help.aliyun.com/document_detail/61109.html?spm=a2c4g.11186623.6.694.zCokJJ)
--   [RTMP推流SDK](../../../../cn.zh-CN/推流SDK/产品介绍.md#)
+-   [RTMP推流SDK](../../../../cn.zh-CN/推流SDK/产品介绍.
 -   [上传SDK](https://help.aliyun.com/document_detail/52200.html?spm=a2c4g.11186623.6.718.aS2bAH)
 
